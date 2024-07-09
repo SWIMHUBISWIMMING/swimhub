@@ -482,7 +482,5 @@ return function(utility)
         return "unknown"
     end
 
-    esp_table.load()
-
     return esp_table
 end
