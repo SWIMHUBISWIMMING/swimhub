@@ -64,16 +64,16 @@ return function(utility)
         },
         settings = {
             enemy = {
-                enabled = true,
+                enabled = false,
 
-                box = true,
-                box_fill = true,
-                realname = true,
-                displayname = true,
-                health = true,
-                dist = true,
-                weapon = true,
-                skeleton = true,
+                box = false,
+                box_fill = false,
+                realname = false,
+                displayname = false,
+                health = false,
+                dist = false,
+                weapon = false,
+                skeleton = false,
 
                 box_outline = false,
                 realname_outline = false,
