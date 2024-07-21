@@ -3014,7 +3014,7 @@ function Library:CreateWindow(...)
         BorderColor3 = 'OutlineColor';
     });
 
-    local MainSectionInner = Library:Create('ImageLabel', {
+    local MainSectionInner = Library:Create('Frame', {
         BackgroundColor3 = Library.BackgroundColor;
         BorderColor3 = Color3.new(0, 0, 0);
         BorderMode = Enum.BorderMode.Inset;
@@ -3022,7 +3022,6 @@ function Library:CreateWindow(...)
         Size = UDim2.new(1, 0, 1, 0);
         ZIndex = 1;
         Parent = MainSectionOuter;
-        Image = "http://www.roblox.com/asset/?id=12612358240";
     });
 
     Library:AddToRegistry(MainSectionInner, {
@@ -3045,9 +3044,10 @@ function Library:CreateWindow(...)
         Parent = TabArea;
     });
 
-    local TabContainer = Library:Create('Frame', {
+    local TabContainer = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
+        Image = "http://www.roblox.com/asset/?id=12612358240";
         Position = UDim2.new(0, 8, 0, 30);
         Size = UDim2.new(1, -16, 1, -38);
         ZIndex = 2;
