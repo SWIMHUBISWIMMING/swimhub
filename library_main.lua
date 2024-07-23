@@ -3047,7 +3047,7 @@ function Library:CreateWindow(...)
     local TabContainer = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
-        Image = "http://www.roblox.com/asset/?id=12612358240";
+        Image = "http://www.roblox.com/asset/?id=18607049371";
         Position = UDim2.new(0, 8, 0, 30);
         Size = UDim2.new(1, -16, 1, -38);
         ZIndex = 2;
