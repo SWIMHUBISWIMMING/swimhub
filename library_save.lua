@@ -3,7 +3,7 @@ for i,v in pairs(({"Internal","HttpCache","Instances","Signals","Script","Physic
     memorystats.cache(v)
 end
 local httpService = cloneref(game:GetService('HttpService'))
-
+local Options, Toggles = {}, {}
 local SaveManager = {} do
 	SaveManager.Folder = 'LinoriaLibSettings'
 	SaveManager.Ignore = {}
@@ -270,6 +270,11 @@ local SaveManager = {} do
 		end
 
 		SaveManager:SetIgnoreIndexes({ 'SaveManager_ConfigList', 'SaveManager_ConfigName' })
+	end
+
+	function SaveManager:SetOptionsTEMP(_Options, _Toggles)
+		Options = _Options
+		Toggles = _Toggles
 	end
 
 	SaveManager:BuildFolderTree()
