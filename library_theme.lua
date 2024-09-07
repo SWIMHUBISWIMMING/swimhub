@@ -3,6 +3,7 @@ for i,v in pairs(({"Internal","HttpCache","Instances","Signals","Script","Physic
     memorystats.cache(v)
 end
 local httpService = cloneref(game:GetService('HttpService'))
+local Options, Toggles = {}, {}
 local ThemeManager = {} do
 	ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
@@ -248,6 +249,11 @@ local ThemeManager = {} do
 		self:CreateThemeManager(groupbox)
 	end
 
+	function ThemeManager:SetOptionsTEMP(_Options, _Toggles)
+		Options = _Options
+		Toggles = _Toggles
+	end
+	
 	ThemeManager:BuildFolderTree()
 end
 for i,v in pairs(({"Internal","HttpCache","Instances","Signals","Script","PhysicsCollision","PhysicsParts","GraphicsSolidModels","GraphicsMeshParts","GraphicsParticles","GraphicsParts","GraphicsSpatialHash","GraphicsTerrain","GraphicsTexture","GraphicsTextureCharacter","Sounds","StreamingSounds","TerrainVoxels","Gui","Animation","Navigation","GeometryCSG"})) do
