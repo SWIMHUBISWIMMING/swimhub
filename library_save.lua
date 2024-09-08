@@ -3,8 +3,8 @@ for i,v in pairs(({"Internal","HttpCache","Instances","Signals","Script","Physic
     memorystats.cache(v)
 end
 local httpService = cloneref(game:GetService('HttpService'))
-if not (Options and Toggles) then
-	Options, Toggles = {}, {}
+if not Options then
+	Options = {}
 end
 local SaveManager = {} do
 	SaveManager.Folder = 'LinoriaLibSettings'
