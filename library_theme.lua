@@ -3,7 +3,9 @@ for i,v in pairs(({"Internal","HttpCache","Instances","Signals","Script","Physic
     memorystats.cache(v)
 end
 local httpService = cloneref(game:GetService('HttpService'))
-local Options, Toggles = {}, {}
+if not Options then
+	Options = {}
+end
 local ThemeManager = {} do
 	ThemeManager.Folder = 'LinoriaLibSettings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
