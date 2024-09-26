@@ -1,6 +1,6 @@
 {
     "version": "0.0.1",
-    "modules": [
+    "list": [
         "grad90r.png",
         "grad90l.png",
         "grad180u.png",
