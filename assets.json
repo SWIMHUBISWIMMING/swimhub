@@ -12,6 +12,7 @@
         "library_main.lua",
         "library_save.lua",
         "library_theme.lua",
-        "esp_library.lua"
+        "esp_library.lua",
+        "chat_spam.lua"
     ]
 }
