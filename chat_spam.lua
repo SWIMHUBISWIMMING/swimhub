@@ -104,27 +104,25 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
     end})
     local pos = 0
     local function genrandom()
-        local len = maxlen
         local currstring = ""
         local tbl = spams["random words"]
-        while currstring:len() <= len do
+        while currstring:len() <= maxlen do
             currstring = currstring..tbl[math.random(#tbl)].." "
         end
         return currstring
     end
     local function genemjois()
-        local len = maxemojis
         local currstring = ""
-        local tbl = spams["emojis"][pos]
-        while currstring:len() / 4 --[[\240\159\152\128, four bytes]] <= len do
-            currstring = currstring..tbl[math.random(#tbl)].." "
+        local emoji = spams["emojis"][pos]
+        while currstring:len() / 4 --[[\240\159\152\128, four bytes]] <= maxemojis do
+            currstring = currstring..emoji
         end
         return currstring
     end
     task.spawn(function()
         while wait(speed) do if enabled then
-            pos = spamtype ~= "random" and (spams[spamtype][pos] and #spams[spamtype][pos] <= pos + 1 and 1 or pos + 1) or pos
-            sayfunc(spamtype == "random" and genrandom() or spamtype == "emojis" and genemjois() or spams[spamtype][pos])
+            pos = spamtype ~= "random words" and (spams[spamtype][pos] and #spams[spamtype][pos] <= pos + 1 and 1 or pos + 1) or pos
+            sayfunc(spamtype == "random words" and genrandom() or spamtype == "emojis" and genemjois() or spams[spamtype][pos])
         end end
     end)
 end)(...)
