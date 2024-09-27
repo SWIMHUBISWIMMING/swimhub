@@ -48,7 +48,7 @@ for _, v in chatspam_emojis do
 	print("\""..well.."\",")
 end
 ]=]
-return function(Library, groupbox, sayfunc, maxemojis, maxlen)
+return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
     local spams = {
         ["swimhub skeet"] = {
             "\83\87\73\77\72\85\66\32\68\79\78\39\84\32\78\69\69\68\32\85\80\68\65\84\69\32\40\226\151\163\95\226\151\162\41",
@@ -127,4 +127,4 @@ return function(Library, groupbox, sayfunc, maxemojis, maxlen)
             sayfunc(spamtype == "random" and genrandom() or spamtype == "emojis" and genemjois() or spams[spamtype][pos])
         end end
     end)
-end
+end)(...)
