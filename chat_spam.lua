@@ -123,7 +123,7 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
     end
     task.spawn(function()
         while wait(speed) do if enabled then
-            pos = spamtype ~= "random" and (#spams[spamtype][pos] <= pos + 1 and 1 or pos + 1) or pos
+            pos = spamtype ~= "random" and (spams[spamtype][pos] and #spams[spamtype][pos] <= pos + 1 and 1 or pos + 1) or pos
             sayfunc(spamtype == "random" and genrandom() or spamtype == "emojis" and genemjois() or spams[spamtype][pos])
         end end
     end)
