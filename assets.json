@@ -1,5 +1,5 @@
 {
-    "version": "0.0.2",
+    "version": "0.0.2a",
     "list": [
         "grad90r.png",
         "grad90l.png",
@@ -12,7 +12,6 @@
         "library_main.lua",
         "library_save.lua",
         "library_theme.lua",
-        "esp_library.lua",
         "chat_spam.lua"
     ]
 }
