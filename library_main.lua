@@ -2643,7 +2643,7 @@ do
                 local Elem = Dependency[1];
                 local Value = Dependency[2];
 
-                if Elem.Type == "Toggle" and Elem.Value ~= Value then
+                if Elem.Value ~= Value then
                     Holder.Visible = false;
                     Depbox:Resize();
                     return;
