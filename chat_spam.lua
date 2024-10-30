@@ -143,9 +143,9 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
         end
         return currstring
     end
-    local function genemjois()
+    local function genemjois(_table)
         local currstring = ""
-        local emoji = spams["emojis"][pos]
+        local emoji = _table
         while currstring:len() / 4 --[[\240\159\152\128, four bytes]] <= maxemojis do
             currstring = currstring..emoji
         end
@@ -160,7 +160,7 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
                 pos = (
                     spamwords[pos] and #spamwords[pos] <= (pos + 1) and pos + 1 or 1
                 ) or 1 -- fail safely
-                sayfunc(spammode == 1 and genemjois() or spamwords[pos])
+                sayfunc(spammode == 1 and genemjois(spamwords[pos]) or spamwords[pos])
                 generated = true
             end
             if spammode == 2 then
