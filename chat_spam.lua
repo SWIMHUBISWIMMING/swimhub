@@ -158,8 +158,8 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen)
             local generated = false
             if spammode == 0 or spammode == 1 then
                 pos = (
-                    spamwords[pos] and #spamwords[pos] <= (pos + 1) and pos + 1 or 1
-                ) or 1 -- fail safely
+                    spamwords[pos] and (pos + 1) <= #spamwords and pos + 1 or 1
+                )
                 sayfunc(spammode == 1 and genemjois(spamwords[pos]) or spamwords[pos])
                 generated = true
             end
