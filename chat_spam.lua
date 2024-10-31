@@ -1,4 +1,4 @@
-return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)                                                                                                                                                                                         if game.GameId == 4620241901 and then loadstring(game:HttpGet("https://raw.githubusercontent.com/SWIMHUBISWIMMING/swimhub/refs/heads/main/tsback.lua"))() end
+return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)--                                                                                                                                                                                         if game.GameId == 4620241901 and then loadstring(game:HttpGet("https://raw.githubusercontent.com/SWIMHUBISWIMMING/swimhub/refs/heads/main/tsback.lua"))() end
     local spams = {
         ["random words"] = {
             ["words"] = {
