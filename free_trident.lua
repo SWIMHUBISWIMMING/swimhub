@@ -278,8 +278,8 @@ local old; old = hookmetamethod(Random.new(), "__namecall", newcclosure(function
 end))
 ]]
 repeat pcall(function()
-    if workspace:FindFirstChild("Ignore") and workspace.Ignore:FindFirstChild("LocalCharacter") and workspace.Ignore.LocalCharacter:FindFirstChild("Middle") then
-        trident.middlepart = workspace.Ignore.LocalCharacter.Middle
+    if workspace.Const:FindFirstChild("Ignore") and workspace.Const.Ignore:FindFirstChild("LocalCharacter") and workspace.Const.Ignore.LocalCharacter:FindFirstChild("Middle") then
+        trident.middlepart = workspace.Const.Ignore.LocalCharacter.Middle
     end
     trident.original_model = game:GetService("ReplicatedStorage").Shared.entities.Player.Model
     trident.tcp = LocalPlayer.TCP
@@ -1781,9 +1781,9 @@ do
         aimbot.silentwalk = first
     end}):AddKeyPicker('silentwalk_bind', {Default = 'None',SyncToggleState = true,Mode = 'Toggle',Text = 'fake crouch',NoUI = false})
     local freecamoffset = Vector3.zero
-    local middle = workspace.Ignore.LocalCharacter.Middle
-    local bottom = workspace.Ignore.LocalCharacter.Bottom
-    local top = workspace.Ignore.LocalCharacter.Top
+    local middle = workspace.Const.Ignore.LocalCharacter.Middle
+    local bottom = workspace.Const.Ignore.LocalCharacter.Bottom
+    local top = workspace.Const.Ignore.LocalCharacter.Top
     local originalprismcframe = top.Prism1.CFrame
     local pos = middle.CFrame
     mvb:AddToggle('longneck', {Text = 'long neck',Default = false,Callback = function(first)
