@@ -277,14 +277,11 @@ local old; old = hookmetamethod(Random.new(), "__namecall", newcclosure(function
     return old(self, ...)
 end))
 ]]
-repeat pcall(function()
-    if workspace.Const:FindFirstChild("Ignore") and workspace.Const.Ignore:FindFirstChild("LocalCharacter") and workspace.Const.Ignore.LocalCharacter:FindFirstChild("Middle") then
-        trident.middlepart = workspace.Const.Ignore.LocalCharacter.Middle
-    end
+repeat if not pcall(function()
+    trident.middlepart = workspace.Const.Ignore.LocalCharacter.Middle
     trident.original_model = game:GetService("ReplicatedStorage").Shared.entities.Player.Model
     trident.tcp = LocalPlayer.TCP
-    if not (trident.middlepart and trident.original_model) then task.wait(0.1) end
-end) until trident.middlepart ~= nil and trident.original_model
+end) then task.wait(0.5) end until trident.middlepart and trident.original_model and trident.tcpl
 
 cheat.EspLibrary = {}; LPH_NO_VIRTUALIZE(function()
     local esp_table = {}
