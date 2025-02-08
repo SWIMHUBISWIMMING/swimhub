@@ -281,7 +281,7 @@ repeat if not pcall(function()
     trident.middlepart = workspace.Const.Ignore.LocalCharacter.Middle
     trident.original_model = game:GetService("ReplicatedStorage").Shared.entities.Player.Model
     trident.tcp = LocalPlayer.TCP
-end) then task.wait(0.5) end until trident.middlepart and trident.original_model and trident.tcpl
+end) then task.wait(0.5) end until trident.middlepart and trident.original_model and trident.tcp
 
 cheat.EspLibrary = {}; LPH_NO_VIRTUALIZE(function()
     local esp_table = {}
