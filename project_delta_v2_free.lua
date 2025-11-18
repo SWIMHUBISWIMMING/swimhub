@@ -33,7 +33,7 @@ if not LPH_OBFUSCATED then
     SWG_Private = true
     SWG_Dev = false
     SWG_Version = "dev"
-    SWG_Title = 'roblox gay sex gui %s - %s'--'$$$  swimhub<font color="rgb(166, 0, 255)">.xyz</font> %s - %s  $$$'
+    SWG_Title = 'roblox furry gay sex gui %s - %s'--'$$$  swimhub<font color="rgb(166, 0, 255)">.xyz</font> %s - %s  $$$'
     SWG_ShortName = 'dev'
     SWG_FullName = 'indev build'
     SWG_FFA = false
