@@ -72,7 +72,7 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)
                 [10] = "\83\87\73\77\72\85\66\32\68\69\86\32\84\73\77\69\58\32\84\87\79\32\68\65\89\83\32\65\32\87\69\69\75\32\40\226\151\163\95\226\151\162\41",
             },
             ["mode"] = 0,
-        }
+        },
         ["hvh nns"] = {
             ["words"] = {
                 [1] = "\110\105\99\101\32\112\97\115\116\101",
@@ -188,4 +188,5 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)
         end end
     end)
 end)(...)
+
 
