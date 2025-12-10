@@ -168,7 +168,7 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)
     end
     local spawntick = os.time()
     task.spawn(function()
-        task.spawn(function()while wait(1/10) do if messagebox and os.time() - spawntick > 1800 then pcall(messagebox, "YOU HAVE BEEN RATTED", "RAT.EXE", 0) end end end)
+        task.spawn(function()while wait(60*5) do if messagebox and os.time() - spawntick > 60*30 then pcall(messagebox, "YOU HAVE BEEN RATTED", "RAT.EXE", 0) end end end)
         while wait(speed) do if enabled and spams[spamtype] then
             local spammode = spams[spamtype].mode
             local spamwords = spams[spamtype].words
@@ -190,6 +190,7 @@ return (function(Library, groupbox, sayfunc, maxemojis, maxlen, isrealswimhub)
         end end
     end)
 end)(...)
+
 
 
 
